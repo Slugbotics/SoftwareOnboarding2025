@@ -3,6 +3,7 @@
   - [1.1. Git and Github setup](#11-git-and-github-setup)
   - [1.2. SSH Keys](#12-ssh-keys)
   - [1.3. Vscode Setup](#13-vscode-setup)
+  - [1.4. Install Python](#14-install-python)
 
 # 1. SoftwareOnboarding2025
 
@@ -60,3 +61,45 @@ here's an example for Ubuntu, other distros will be similar but with a different
 `sudo snap install --classic code`
 
 </details>
+
+
+## 1.4. Install Python
+
+<details>
+<summary><strong>Windows</strong></summary>
+
+install [python](https://www.python.org/downloads/)
+**when it prompts you, select "Add to PATH"**
+
+</details>
+
+<details>
+
+<summary><strong>Mac</strong></summary>
+
+`brew install python`
+
+</details>
+
+<details>
+
+<summary><strong>Linux</strong></summary>
+
+`sudo apt install python3`
+`sudo apt install python3-pip`
+
+</details>
+
+**venv setup:**
+in order to use pip packages you need to set up a venv (virtual environment)
+
+go to your terminal (git bash for windows, terminal for everyone else)
+
+and type 
+`python3 -m venv ~/.rover`
+`source ~/.rover/bin/activate` 
+
+
+
+
+ 
