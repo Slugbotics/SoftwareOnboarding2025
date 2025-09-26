@@ -8,34 +8,55 @@
 
 ## 1.1. Git and Github setup
 
-**Windows:**
+<details>
+<summary><strong>Windows</strong></summary>
 
-install [git](https://git-scm.com/downloads) 
+install [git](https://git-scm.com/downloads)
 
-**Mac:**
+</details>
 
-Open terminal, paste this command and press enter to install homebrew
+<details>
+<summary><strong>Mac</strong></summary>
+
+Open terminal, paste this command and press enter to install homebrew  
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-Then use brew to install git
+Then use brew to install git  
 `brew install git`
 
-**Linux:**
-here's an example for Ubuntu, other distros will be similar but with a different package manager
-`sudo apt update`
-`sudo apt upgrade`
+</details>
+
+<details>
+<summary><strong>Linux</strong></summary>
+
+here's an example for Ubuntu, other distros will be similar but with a different package manager  
+`sudo apt update`  
+`sudo apt upgrade`  
 `sudo apt install git`
+
+</details>
+
+---
 
 ## 1.2. SSH Keys
 
 Follow [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) guide
 
+---
+
 ## 1.3. Vscode Setup
 
-**Windows and Mac:**
+<details>
+<summary><strong>Windows and Mac</strong></summary>
 
 install [vscode](https://code.visualstudio.com/download)
 
-**Linux:**
-here's an example for Ubuntu, other distros will be similar but with a different package manager
+</details>
+
+<details>
+<summary><strong>Linux</strong></summary>
+
+here's an example for Ubuntu, other distros will be similar but with a different package manager  
 `sudo snap install --classic code`
+
+</details>
