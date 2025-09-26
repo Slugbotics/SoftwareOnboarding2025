@@ -36,15 +36,14 @@ here's an example for Ubuntu, other distros will be similar but with a different
 `sudo apt install git`
 
 </details>
-
 Basic Git Commands: 
 To update local files: 
-    git pull
+'git pull'
     
 To update git repository to match local files:
-    git add . #adds all files in the local repo to the commit
-    git commit -m "{Commit message}" #This add a message to the commit (cannot be empty)
-    git push #finally, push the entire commit to update the github repo
+'git add .' 
+'git commit -m "{Commit message}"' 
+'git push' 
 ---
 
 ## 1.2. SSH Keys
