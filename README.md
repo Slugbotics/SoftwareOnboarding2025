@@ -1,3 +1,41 @@
-# SoftwareOnboarding2025
-# SoftwareOnboarding2025
-# SoftwareOnboarding2025
+## 0.1. Table of Contents
+- [1. SoftwareOnboarding2025](#1-softwareonboarding2025)
+  - [1.1. Git and Github setup](#11-git-and-github-setup)
+  - [1.2. SSH Keys](#12-ssh-keys)
+  - [1.3. Vscode Setup](#13-vscode-setup)
+
+# 1. SoftwareOnboarding2025
+
+## 1.1. Git and Github setup
+
+**Windows:**
+
+install [git](https://git-scm.com/downloads) 
+
+**Mac:**
+
+Open terminal, paste this command and press enter to install homebrew
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+Then use brew to install git
+`brew install git`
+
+**Linux:**
+here's an example for Ubuntu, other distros will be similar but with a different package manager
+`sudo apt update`
+`sudo apt upgrade`
+`sudo apt install git`
+
+## 1.2. SSH Keys
+
+Follow [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) guide
+
+## 1.3. Vscode Setup
+
+**Windows and Mac:**
+
+install [vscode](https://code.visualstudio.com/download)
+
+**Linux:**
+here's an example for Ubuntu, other distros will be similar but with a different package manager
+`sudo snap install --classic code`
