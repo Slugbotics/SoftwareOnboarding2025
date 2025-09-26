@@ -37,6 +37,14 @@ here's an example for Ubuntu, other distros will be similar but with a different
 
 </details>
 
+Basic Git Commands: 
+To update local files: 
+    git pull
+    
+To update git repository to match local files:
+    git add . #adds all files in the local repo to the commit
+    git commit -m "{Commit message}" #This add a message to the commit (cannot be empty)
+    git push #finally, push the entire commit to update the github repo
 ---
 
 ## 1.2. SSH Keys
