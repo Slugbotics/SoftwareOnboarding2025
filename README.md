@@ -8,7 +8,7 @@
 # 1. SoftwareOnboarding2025
 
 ## 1.1. Git and Github setup
-
+### Setup Process
 <details>
 <summary><strong>Windows</strong></summary>
 
@@ -37,8 +37,10 @@ here's an example for Ubuntu, other distros will be similar but with a different
 
 </details>
 
-### Basic Git Commands
+### Basic Git
 
+<details>
+<summary><strong>Commands</strong></summary>
 To update local files:
 ```bash
 git pull
@@ -50,6 +52,7 @@ git add .
 git commit -m "{Commit Message})"
 git push
 ```
+</details>
 
 ---
 
