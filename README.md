@@ -44,9 +44,7 @@ To clone a repo onto your device:
 git clone https://github.com/{USERNAME}/{REPO_NAME}
 ```
 Following this clone, you can now access the directory using: 
-```bash
-cd {REPO_NAME}
-```
+`cd {REPO_NAME}`
   
 To update local files:
 ```bash
