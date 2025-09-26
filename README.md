@@ -41,6 +41,7 @@ here's an example for Ubuntu, other distros will be similar but with a different
 
 <details>
 <summary><strong>Commands</strong></summary>
+  
 To update local files:
 ```bash
 git pull
