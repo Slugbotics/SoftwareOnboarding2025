@@ -40,12 +40,16 @@ here's an example for Ubuntu, other distros will be similar but with a different
 ### Basic Git Commands
 
 To update local files:
+```bash
 git pull
+```
 
 To update the Git repository to match local files:
+```bash
 git add .
 git commit -m "{Commit Message})"
 git push
+```
 
 ---
 
