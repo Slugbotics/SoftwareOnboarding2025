@@ -37,10 +37,8 @@ here's an example for Ubuntu, other distros will be similar but with a different
 
 </details>
 
-### Basic Git
+### Basic Git Commands
 
-<details>
-<summary><strong>Commands</strong></summary>
   
 To update local files:
 ```bash
@@ -53,7 +51,7 @@ git add .
 git commit -m "{Commit Message})"
 git push
 ```
-</details>
+
 
 ---
 
