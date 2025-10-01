@@ -123,9 +123,9 @@ and type
 
 ## 1.5 Rover Team Interest Survey
 
-<details>
-  Please fill out [this](https://(https://forms.gle/npHtGR95Z3k5cKRw5)
-</details>
+
+  Please fill out [this](https://forms.gle/npHtGR95Z3k5cKRw5)
+
 
 
 
