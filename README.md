@@ -124,7 +124,7 @@ and type
 ## 1.5 Rover Team Interest Survey
 
 
-  Please fill out [this](https://forms.gle/npHtGR95Z3k5cKRw5)
+  Please fill out [this form](https://forms.gle/npHtGR95Z3k5cKRw5) to gain your specific discord roles
 
 
 
