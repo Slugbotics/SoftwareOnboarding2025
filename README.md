@@ -1,10 +1,11 @@
 ## 0.1. Table of Contents
 - [1. SoftwareOnboarding2025](#1-softwareonboarding2025)
   - [1.1. Git and Github setup](#11-git-and-github-setup)
-  - [1.2. SSH Keys](#12-ssh-keys)
-  - [1.3. Vscode Setup](#13-vscode-setup)
-  - [1.4. Install Python](#14-install-python)
-  - [1.5. Rover Team Interest Survey](#15-rover-team-interest-survey)
+  - [1.2. Navigating the Command Line](#12-navigating-the-command-line)
+  - [1.3. SSH Keys](#13-ssh-keys)
+  - [1.4. Vscode Setup](#14-vscode-setup)
+  - [1.5. Install Python](#15-install-python)
+  - [1.6. Rover Team Interest Survey](#16-rover-team-interest-survey)
 
 # 1. SoftwareOnboarding2025
 
@@ -58,17 +59,140 @@ git add .
 git commit -m "{Commit Message}"
 git push
 ```
+## 1.2. Navigating the Command Line
+<details>
+  <summary><strong>Mac and Linux</strong></summary>
+  To move through directories:
+  ```bash
+  cd {directory_name}
+  ```
+  To move backwards through directories:
+  ```bash
+  cd ..
+  ```
+  To make a new file:
+  ```bash
+  touch {filename.txt}
+  ```
+  To make a new directory:
+  ```bash
+  mkdir {directory_name}
+  ```
+  
+  To delete a file:
+  ```bash
+  rm {file_name}
+  ```
+To delete a directory (and contents): 
+```bash
+rm -rf {directory_name}
+```
+  To view a file without accessing:
+  ```bash
+  cat {file_name}
+  ```
+  To view current directory:
+  ```bash
+ls
+```
+or
+```bash
+ls {path/to/directory/directory_name}
+```
+  
+</details>
 
+<details><summary><strong>Windows</strong></summary>
+
+  To move through directories:
+  ```bash
+  cd {directory_name}
+  ```
+  To move backwards through directories:
+  ```bash
+  cd ..
+  ```
+  To make a new file:
+  ```bash
+  echo. > {filename.txt}
+  ```
+  To make a new directory:
+  ```bash
+  mkdir {directory_name}
+  ```
+  
+  To delete a file:
+  ```bash
+  del {file_name}
+  ```
+To force delete a directory(and contents): 
+```bash
+rmdir /S /Q {directory_name}
+```
+  To view a file without accessing:
+  ```bash
+  type {file_name}
+  ```
+  To view current directory:
+  ```bash
+dir
+```
+or
+```bash
+dir {path/to/directory/directory_name}
+```
+
+</details>
+
+<details><summary><strong>Windows Powershell</strong></summary>
+
+To move through directories:
+  ```bash
+  cd {directory_name}
+  ```
+  To move backwards through directories:
+  ```bash
+  cd ..
+  ```
+  To make a new file:
+  ```bash
+  New-Item {filename.txt}
+  ```
+  To make a new directory:
+  ```bash
+  New-Item -ItemType Directory {directory_name}
+  ```
+  
+  To delete a file:
+  ```bash
+  Remove-Item {file_name}
+  ```
+To force delete a directory(and contents): 
+```bash
+Remove-Item {directory_name} -Recurse -Force
+```
+  To view a file without accessing:
+  ```bash
+  Get-Content {file_name}
+  ```
+  To view current directory:
+  ```bash
+Get-ChildItem
+```
+
+
+
+</details>
 
 ---
 
-## 1.2. SSH Keys
+## 1.3. SSH Keys
 
 Follow [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) guide
 
 ---
 
-## 1.3. Vscode Setup
+## 1.4. Vscode Setup
 
 <details>
 <summary><strong>Windows and Mac</strong></summary>
@@ -86,7 +210,7 @@ here's an example for Ubuntu, other distros will be similar but with a different
 </details>
 
 
-## 1.4. Install Python
+## 1.5. Install Python
 
 <details>
 <summary><strong>Windows</strong></summary>
@@ -122,7 +246,7 @@ and type
 `python3 -m venv ~/.rover`
 `source ~/.rover/bin/activate` 
 
-## 1.5 Rover Team Interest Survey
+## 1.6 Rover Team Interest Survey
 
 
   Please fill out [this form](https://forms.gle/npHtGR95Z3k5cKRw5) to gain your specific discord roles
