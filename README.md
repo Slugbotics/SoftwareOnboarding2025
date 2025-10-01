@@ -4,6 +4,7 @@
   - [1.2. SSH Keys](#12-ssh-keys)
   - [1.3. Vscode Setup](#13-vscode-setup)
   - [1.4. Install Python](#14-install-python)
+  - [1.5. QR Code](#15-rover-team-interest-survey)
 
 # 1. SoftwareOnboarding2025
 
