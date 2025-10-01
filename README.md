@@ -62,14 +62,17 @@ git push
 ## 1.2. Navigating the Command Line
 <details>
   <summary><strong>Mac and Linux</strong></summary>
+  
   To move through directories:
   ```bash
   cd {directory_name}
   ```
+  
   To move backwards through directories:
   ```bash
   cd ..
   ```
+
   To make a new file:
   ```bash
   touch {filename.txt}
