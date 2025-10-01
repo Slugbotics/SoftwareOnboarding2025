@@ -8,7 +8,7 @@
 # 1. SoftwareOnboarding2025
 
 ## 1.1. Git and Github setup
-
+### Setup Process
 <details>
 <summary><strong>Windows</strong></summary>
 
@@ -37,14 +37,28 @@ here's an example for Ubuntu, other distros will be similar but with a different
 
 </details>
 
-Basic Git Commands: 
-To update local files: 
-    git pull
-    
-To update git repository to match local files:
-    git add . #adds all files in the local repo to the commit
-    git commit -m "{Commit message}" #This add a message to the commit (cannot be empty)
-    git push #finally, push the entire commit to update the github repo
+### Basic Git Commands
+
+To clone a repo onto your device: 
+```bash
+git clone https://github.com/{USERNAME}/{REPO_NAME}
+```
+Following this clone, you can now access the directory using: 
+`cd {REPO_NAME}`
+  
+To update local files:
+```bash
+git pull
+```
+
+To update the Git repository to match local files:
+```bash
+git add .
+git commit -m "{Commit Message})"
+git push
+```
+
+
 ---
 
 ## 1.2. SSH Keys
@@ -106,6 +120,12 @@ go to your terminal (git bash for windows, terminal for everyone else)
 and type 
 `python3 -m venv ~/.rover`
 `source ~/.rover/bin/activate` 
+
+## 1.5 Rover Team Interest Survey
+
+
+  Please fill out [this form](https://forms.gle/npHtGR95Z3k5cKRw5) to gain your specific discord roles
+
 
 
 
