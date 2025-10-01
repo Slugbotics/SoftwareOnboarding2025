@@ -125,6 +125,7 @@ and type
 
 
   Please fill out [this form](https://forms.gle/npHtGR95Z3k5cKRw5) to gain your specific discord roles
+  <img src="qrcode.jpg" alt="QR Code" width="200" height="200">
 
 
 
