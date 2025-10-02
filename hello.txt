@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 Aashka 
+=======
+HIII
+this is my new file
+>>>>>>> 77e25802f472a4bbf950f0191e37b5604404ac9c
