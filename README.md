@@ -1,152 +1,153 @@
-## 0.1. Table of Contents
-- [1. SoftwareOnboarding2025](#1-softwareonboarding2025)
-  - [1.1. Git and Github setup](#11-git-and-github-setup)
-  - [1.2. Navigating the Command Line](#12-navigating-the-command-line)
-  - [1.3. SSH Keys](#13-ssh-keys)
-  - [1.4. Vscode Setup](#14-vscode-setup)
-  - [1.5. Install Python](#15-install-python)
-  - [1.6. Rover Team Interest Survey](#16-rover-team-interest-survey)
+# 🎉 Welcome to the Slugbotics Software Onboarding (2025)
 
-# 1. SoftwareOnboarding2025
+This guide will get your computer set up with all the tools you’ll need to start coding, collaborating, and building robots with us 🚀
 
-Get started with essential tools and skills for software development.
+---
 
-## 1.1. Git and Github setup
-Install Git and learn basic commands to manage code with GitHub.
+## 📚 Table of Contents
+1. [Git + GitHub Setup](#-1-git--github-setup)  
+2. [VS Code Setup](#-2-vs-code-setup)  
+3. [Python Setup](#-3-python-setup)  
+4. [ROS 2 Setup](#-4-ros-2-setup)  
+5. [WSL (Optional, Windows Only)](#-5-wsl-optional-windows-only)  
+6. [VS Code Extensions](#-6-vs-code-extensions)  
+7. [Next Steps + Club Resources](#-7-next-steps--club-resources)  
 
-### Setup Process
-<details>
-<summary><strong>Windows</strong></summary>
+---
 
-Download and install [Git](https://git-scm.com/downloads).
+## 🗂️ 1. Git + GitHub Setup
+Git is like Google Drive for code. It keeps track of changes and makes teamwork possible.  
 
-</details>
+### Install Git
+- **Windows** → [Download Git](https://git-scm.com/downloads) and run the installer.
+- **macOS** → Install Homebrew first if not already installed:  
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+  * Then run:
+  `brew install git`
 
-<details>
-<summary><strong>Mac</strong></summary>
+* **Ubuntu Linux** →
+  `sudo apt update && sudo apt install git`
 
-Install Homebrew:  
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+### GitHub CLI (recomended)
 
-Then use brew to install git  
-`brew install git`
+- Download the [GitHub CLI](https://cli.github.com/). This makes it easier to interact with GitHub from your terminal. It also makes it super easy to connect your computer to GitHub and handle authentication without the hassle of tokens or SSH setup.
 
-</details>
+- Once installed, run:
+  ```
+  gh auth login
+  ```
+  💡 *Note on SSH keys:* These are like secure “passwords” for GitHub. You don’t need to worry about them now, but if you want to learn more, see [GitHub’s SSH guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). Github CLI should set these up for you automatically. If you want to learn how that works, check it out [here](https://cli.github.com/manual/gh_auth_login)
 
-<details>
-<summary><strong>Linux</strong></summary>
+---
 
-For Ubuntu:  
-`sudo apt update && sudo apt install git`
+## 📝 2. VS Code Setup
 
-</details>
+[Download VS Code](https://code.visualstudio.com/) for your OS.
 
-### Basic Git Commands
+* **Windows/macOS** → Just run the installer.
+* **Ubuntu Linux** →
+  `
+  sudo snap install --classic code
+  `
 
-Clone a repo:  
-`git clone https://github.com/{USERNAME}/{REPO_NAME}`
+Once installed, you can open projects, run code, and manage Git all inside VS Code.
 
-Enter folder:  
-`cd {REPO_NAME}`
+---
 
-Update files:  
-`git pull`
+## 🐍 3. Python Setup
 
-Save changes:  
-`git add .`  
-`git commit -m "Your message"`  
-`git push`
+We use **Python** for most of our development.
 
-## 1.2. Navigating the Command Line
-Learn basic terminal commands to navigate files and folders.
+* **Windows** → [Download Python](https://www.python.org/downloads/). 
 
-<details>
-  <summary><strong>Mac and Linux</strong></summary>
-  
-  Change directory: `cd {directory_name}`  
-  Go back: `cd ..`  
-  Create file: `touch {filename.txt}`  
-  Create folder: `mkdir {directory_name}`  
-  Delete file: `rm {file_name}`  
-  Delete folder: `rm -rf {directory_name}`  
-  View file: `cat {file_name}`  
-  List files: `ls` or `ls {path/to/folder}`
-  
-</details>
+    * ⚠️ During install, remember to check ***Add Python to PATH***.
+* **macOS** →
 
-<details><summary><strong>Windows</strong></summary>
+  ```bash
+  brew install python
+  ```
+* **Ubuntu Linux** →
 
-  Change directory: `cd {directory_name}`  
-  Go back: `cd ..`  
-  Create file: `echo. > {filename.txt}`  
-  Create folder: `mkdir {directory_name}`  
-  Delete file: `del {file_name}`  
-  Delete folder: `rmdir /S /Q {directory_name}`  
-  View file: `type {file_name}`  
-  List files: `dir` or `dir {path\to\folder}`
+  ```bash
+  sudo apt install python3 python3-pip
+  ```
 
-</details>
+**Optional (recommended):** Create a virtual environment for Rover work. This keeps your python packages localized to the project so the specific version #s don't bog the rest of your projects:
 
-## 1.3. SSH Keys
-Generate SSH keys for secure, password-less GitHub access.
+```bash
+# After cloning the current repository: 
+cd {repository}
+python3 -m venv ./.rover
+source ./.rover/bin/activate
+```
 
-Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+---
 
-## 1.4. Vscode Setup
-Install Visual Studio Code, a free code editor.
+## 🤖 4. ROS 2 Setup
 
-<details>
-<summary><strong>Windows and Mac</strong></summary>
+We use **ROS 2 Jazzy Jalisco (LTS)** for rover development.
 
-Download from [VS Code](https://code.visualstudio.com/download).
+Follow the official installation instructions here:
+👉 [ROS 2 Jazzy Jalisco Install Guide](https://docs.ros.org/en/jazzy/Installation.html)
 
-</details>
+*(Tip: Ubuntu is the easiest environment for ROS 2, so if you’re on Windows consider using WSL — see next section.)*
 
-<details>
-<summary><strong>Linux</strong></summary>
+---
 
-For Ubuntu: `sudo snap install --classic code`
+## 🐧 5. WSL (Optional, Windows Only)
 
-</details>
+Want a Linux-like environment inside Windows? Install **Windows Subsystem for Linux (WSL)**:
 
-## 1.5. Install Python
-Install Python and create a virtual environment for projects.
+1. Open PowerShell as Administrator and run:
 
-<details>
-<summary><strong>Windows</strong></summary>
+   ```bash
+   wsl --install
+   ```
+2. Restart your computer.
+3. Open the “Ubuntu” app from your Start menu, or open Terminal/Powershell and run `wsl`.
 
-Download [Python](https://www.python.org/downloads/). Check "Add to PATH".
+This gives you access to the same tools Linux users enjoy, without partitioning your drive into two.
 
-</details>
+---
 
-<details>
-<summary><strong>Mac</strong></summary>
+## 🔌 6. VS Code Extensions
 
-`brew install python`
+Make VS Code your all-in-one dev environment:
 
-</details>
+* 🧰 [Git Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack) – Git tools made simple
+* 🤖 [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) + [Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) – AI helper
+* 🐍 [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) – Python support
+* 🐧 [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) – for WSL users
+* 🤖 [ROS 2 RDE Pack](https://marketplace.visualstudio.com/items?itemName=Ranch-Hand-Robotics.rde-pack) – ROS2 development made easier
 
-<details>
-<summary><strong>Linux</strong></summary>
+### Source Control Options
 
-`sudo apt install python3 python3-pip`
+You can manage your GitHub repos in different ways:
 
-</details>
+* **VS Code Source Control Tab** (built-in, very beginner-friendly).
+* **GitHub Desktop** if you prefer a GUI.
+* **CLI** if you want full power, and to be familiar with CLI for when you might not have a mouse (Raspberry Pi/Integrated Systems)
 
-**Virtual Environment:**  
-Create: `python3 -m venv ~/.rover`  
-Activate: `source ~/.rover/bin/activate`
+---
 
-## 1.6 Rover Team Interest Survey
-Fill out the form to get Discord roles and join the Rover team.
+## 🌐 7. Next Steps + Club Resources
 
-Form: [https://forms.gle/npHtGR95Z3k5cKRw5](https://forms.gle/npHtGR95Z3k5cKRw5)  
-<details>
-  <summary><strong>QR Code</strong></summary>
-  <img src="qrcode.jpg" alt="QR Code" width="200" height="200">
-</details>
+* Join the Rover team by filling out this quick survey to get invited to our Discord and assigned roles: [https://forms.gle/npHtGR95Z3k5cKRw5](https://forms.gle/npHtGR95Z3k5cKRw5)
+  <details>
+    <summary><strong>QR Code</strong></summary>
+      <img src="qrcode.jpg" alt="QR Code" width="200" height="200">
+  </details>
 
+* Complete the official GitHub Hello World tutorial [here](https://docs.github.com/en/get-started/start-your-journey/hello-world)
+* Check out [ROS Projects on Youtube](https://www.youtube.com/results?search_query=intro+to+ros)
 
+---
+## 🖥️ Optional: Command Line Basics
+Not sure how to navigate folders or use Git commands in the terminal?  
+Check out our [Command Line Cheatsheet](./COMMANDS.md) for a quick reference.
 
+---
 
-
+🎉 You’re ready to code with us!
