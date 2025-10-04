@@ -9,19 +9,23 @@
 
 # 1. SoftwareOnboarding2025
 
+Get started with essential tools and skills for software development.
+
 ## 1.1. Git and Github setup
+Install Git and learn basic commands to manage code with GitHub.
+
 ### Setup Process
 <details>
 <summary><strong>Windows</strong></summary>
 
-install [git](https://git-scm.com/downloads)
+Download and install [Git](https://git-scm.com/downloads).
 
 </details>
 
 <details>
 <summary><strong>Mac</strong></summary>
 
-Open terminal, paste this command and press enter to install homebrew  
+Install Homebrew:  
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 Then use brew to install git  
@@ -32,199 +36,90 @@ Then use brew to install git
 <details>
 <summary><strong>Linux</strong></summary>
 
-here's an example for Ubuntu, other distros will be similar but with a different package manager  
-`sudo apt update`  
-`sudo apt upgrade`  
-`sudo apt install git`
+For Ubuntu:  
+`sudo apt update && sudo apt install git`
 
 </details>
 
 ### Basic Git Commands
 
-To clone a repo onto your device: 
-```bash
-git clone https://github.com/{USERNAME}/{REPO_NAME}
-```
-Following this clone, you can now access the directory using: 
-`cd {REPO_NAME}`
-  
-To update local files:
-```bash
-git pull
-```
+Clone a repo:  
+`git clone https://github.com/{USERNAME}/{REPO_NAME}`
 
-To update the Git repository to match local files:
-```bash
-git add .
-git commit -m "{Commit Message}"
-git push
-```
+Enter folder:  
+`cd {REPO_NAME}`
+
+Update files:  
+`git pull`
+
+Save changes:  
+`git add .`  
+`git commit -m "Your message"`  
+`git push`
+
 ## 1.2. Navigating the Command Line
+Learn basic terminal commands to navigate files and folders.
+
 <details>
   <summary><strong>Mac and Linux</strong></summary>
   
-  To move through directories:
-  ```bash
-  cd {directory_name}
-  ```
-  
-  To move backwards through directories:
-  ```bash
-  cd ..
-  ```
-
-  To make a new file:
-  ```bash
-  touch {filename.txt}
-  ```
-  To make a new directory:
-  ```bash
-  mkdir {directory_name}
-  ```
-  
-  To delete a file:
-  ```bash
-  rm {file_name}
-  ```
-To delete a directory (and contents): 
-```bash
-rm -rf {directory_name}
-```
-  To view a file without accessing:
-  ```bash
-  cat {file_name}
-  ```
-  To view current directory:
-  ```bash
-ls
-```
-or
-```bash
-ls {path/to/directory/directory_name}
-```
+  Change directory: `cd {directory_name}`  
+  Go back: `cd ..`  
+  Create file: `touch {filename.txt}`  
+  Create folder: `mkdir {directory_name}`  
+  Delete file: `rm {file_name}`  
+  Delete folder: `rm -rf {directory_name}`  
+  View file: `cat {file_name}`  
+  List files: `ls` or `ls {path/to/folder}`
   
 </details>
 
 <details><summary><strong>Windows</strong></summary>
 
-  To move through directories:
-  ```bash
-  cd {directory_name}
-  ```
-  To move backwards through directories:
-  ```bash
-  cd ..
-  ```
-  To make a new file:
-  ```bash
-  echo. > {filename.txt}
-  ```
-  To make a new directory:
-  ```bash
-  mkdir {directory_name}
-  ```
-  
-  To delete a file:
-  ```bash
-  del {file_name}
-  ```
-To force delete a directory(and contents): 
-```bash
-rmdir /S /Q {directory_name}
-```
-  To view a file without accessing:
-  ```bash
-  type {file_name}
-  ```
-  To view current directory:
-  ```bash
-dir
-```
-or
-```bash
-dir {path/to/directory/directory_name}
-```
+  Change directory: `cd {directory_name}`  
+  Go back: `cd ..`  
+  Create file: `echo. > {filename.txt}`  
+  Create folder: `mkdir {directory_name}`  
+  Delete file: `del {file_name}`  
+  Delete folder: `rmdir /S /Q {directory_name}`  
+  View file: `type {file_name}`  
+  List files: `dir` or `dir {path\to\folder}`
 
 </details>
-
-<details><summary><strong>Windows Powershell</strong></summary>
-
-To move through directories:
-  ```bash
-  cd {directory_name}
-  ```
-  To move backwards through directories:
-  ```bash
-  cd ..
-  ```
-  To make a new file:
-  ```bash
-  New-Item {filename.txt}
-  ```
-  To make a new directory:
-  ```bash
-  New-Item -ItemType Directory {directory_name}
-  ```
-  
-  To delete a file:
-  ```bash
-  Remove-Item {file_name}
-  ```
-To force delete a directory(and contents): 
-```bash
-Remove-Item {directory_name} -Recurse -Force
-```
-  To view a file without accessing:
-  ```bash
-  Get-Content {file_name}
-  ```
-  To view current directory:
-  ```bash
-Get-ChildItem
-```
-
-
-
-</details>
-
----
 
 ## 1.3. SSH Keys
+Generate SSH keys for secure, password-less GitHub access.
 
-Follow [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) guide
-
----
+Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 ## 1.4. Vscode Setup
+Install Visual Studio Code, a free code editor.
 
 <details>
 <summary><strong>Windows and Mac</strong></summary>
 
-install [vscode](https://code.visualstudio.com/download)
+Download from [VS Code](https://code.visualstudio.com/download).
 
 </details>
 
 <details>
 <summary><strong>Linux</strong></summary>
 
-here's an example for Ubuntu, other distros will be similar but with a different package manager  
-`sudo snap install --classic code`
+For Ubuntu: `sudo snap install --classic code`
 
 </details>
 
-
 ## 1.5. Install Python
+Install Python and create a virtual environment for projects.
 
 <details>
 <summary><strong>Windows</strong></summary>
 
-install [python](https://www.python.org/downloads/)
-**when it prompts you, select "Add to PATH"**
+Download [Python](https://www.python.org/downloads/). Check "Add to PATH".
 
 </details>
 
 <details>
-
 <summary><strong>Mac</strong></summary>
 
 `brew install python`
@@ -232,33 +127,26 @@ install [python](https://www.python.org/downloads/)
 </details>
 
 <details>
-
 <summary><strong>Linux</strong></summary>
 
-`sudo apt install python3`
-`sudo apt install python3-pip`
+`sudo apt install python3 python3-pip`
 
 </details>
 
-**venv setup:**
-in order to use pip packages you need to set up a venv (virtual environment)
-
-go to your terminal (git bash for windows, terminal for everyone else)
-
-and type 
-`python3 -m venv ~/.rover`
-`source ~/.rover/bin/activate` 
+**Virtual Environment:**  
+Create: `python3 -m venv ~/.rover`  
+Activate: `source ~/.rover/bin/activate`
 
 ## 1.6 Rover Team Interest Survey
+Fill out the form to get Discord roles and join the Rover team.
 
-
-  Please fill out [this form](https://forms.gle/npHtGR95Z3k5cKRw5) to gain your specific discord roles
-  <details>
-    <summary><strong>QR Code</strong></summary>
+Form: [https://forms.gle/npHtGR95Z3k5cKRw5](https://forms.gle/npHtGR95Z3k5cKRw5)  
+<details>
+  <summary><strong>QR Code</strong></summary>
   <img src="qrcode.jpg" alt="QR Code" width="200" height="200">
-  </details>
+</details>
 
 
 
 
- 
+
