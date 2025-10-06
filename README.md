@@ -2,7 +2,7 @@
 - [1. SoftwareOnboarding2025](#1-softwareonboarding2025)
   - [1.1. Git and Github setup](#11-git-and-github-setup)
   - [1.2. Navigating the Command Line](#12-navigating-the-command-line)
-  - [1.3. SSH Keys](#13-ssh-keys)
+  - [1.3. Github CLI](#13-github-cli)
   - [1.4. Vscode Setup](#14-vscode-setup)
   - [1.5. Install Python](#15-install-python)
   - [1.6. Rover Team Interest Survey](#16-rover-team-interest-survey)
@@ -189,9 +189,56 @@ Get-ChildItem
 
 ---
 
-## 1.3. SSH Keys
+## 1.3. Github CLI
 
-Follow [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) guide
+Instead of using SSH keys, we recommend authentication using github CLI ('gh')
+
+### Step 1: Install Github CLI
+<details>
+  <summary><strong>Windows</strong></summary>
+  Download the GitHub CLI installer from [here](https://cli.github.com/).  
+Alternatively, install via **winget**:  
+```bash
+winget install --id GitHub.cli
+```
+</details>
+
+<details>
+  <summary><strong>Mac</strong></summary>
+  Install using homebrew:
+  ```bash
+  brew install gh
+  ```
+</details>
+
+<details>
+  <summary><strong>Linux</strong></summary>
+```bash
+  sudo apt install gh
+  ```
+</details>
+
+### Step 2: Authenticate Github
+```bash
+gh auth login
+```
+You will be guided through the following: 
+1. Select Github.com
+2. Select HTTPS as preferred protocol
+3. When asked, click "Login with a web broswer"
+4. Follow on screen instructions to copy and paste a one time code
+5. Test your connection with:
+```bash
+gh auth status
+```
+
+### Step 3: Using Github ClI
+
+Github CLI gives you access to useful commands, such as 
+`gh repo clone owner/repo-name`
+`gh issue list`
+`gh pr create`
+`gh repo view`
 
 ---
 
